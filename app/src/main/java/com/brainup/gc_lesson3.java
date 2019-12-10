@@ -28,7 +28,7 @@ public class gc_lesson3 extends AppCompatActivity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(gc_lesson3.this)
-                        .setTitle("Correct")
+                        .setTitle(getText(R.string.corr))
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
 
@@ -47,7 +47,7 @@ public class gc_lesson3 extends AppCompatActivity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(gc_lesson3.this)
-                        .setTitle("Wrong answer")
+                        .setTitle(getText(R.string.fal))
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
 
@@ -65,7 +65,7 @@ public class gc_lesson3 extends AppCompatActivity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(gc_lesson3.this)
-                        .setTitle("Wrong answer")
+                        .setTitle(getText(R.string.fal))
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
 
@@ -82,7 +82,7 @@ public class gc_lesson3 extends AppCompatActivity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(gc_lesson3.this)
-                        .setTitle("Wrong answer")
+                        .setTitle(getText(R.string.fal))
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
 

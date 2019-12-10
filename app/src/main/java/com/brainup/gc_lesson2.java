@@ -26,7 +26,7 @@ public class gc_lesson2 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(gc_lesson2.this)
-                                .setTitle("Correct \'the moon gravity is 1.622m/s² \'")
+                                .setTitle(getText(R.string.corr)+" the moon gravity is 1.622m/s²")
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -45,7 +45,7 @@ public class gc_lesson2 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(gc_lesson2.this)
-                                .setTitle("Wrong answer")
+                                .setTitle(getText(R.string.fal))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 

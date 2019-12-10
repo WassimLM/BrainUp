@@ -12,9 +12,6 @@
     <string name="answer2">1914</string>
     <string name="answer3">1945</string>
     <string name="answer4">1956</string>
-    <string name="state">correct</string>
-    <string name="fal">false</string>
-    <string name="corr">correct</string>
     <string name="gc_question1">Berlin is the capital of which country?</string>
     <string name="gc_answer1_1">Belgium</string>
     <string name="gc_answer1_2">Austria</string>
@@ -87,5 +84,9 @@
     <string name="s_answer3_2">Wimbledon</string>
     <string name="s_answer3_3">U.S. Open</string>
     <string name="s_answer3_4">French Open</string>
+    <string name="congratulation">congratulation! you have finished this chapter</string>
+    <string name="corr">correct</string>
+    <string name="fal">wrong</string>
+
 
 </resources>

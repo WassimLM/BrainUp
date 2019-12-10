@@ -34,7 +34,7 @@ public class h_lesson4 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson4.this)
-                                .setTitle("Correct")
+                                .setTitle(getText(R.string.corr))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -53,7 +53,7 @@ public class h_lesson4 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson4.this)
-                                .setTitle("Wrong answer")
+                                .setTitle(getText(R.string.fal))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -71,7 +71,7 @@ public class h_lesson4 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson4.this)
-                                .setTitle("Wrong answer")
+                                .setTitle(getText(R.string.fal))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -88,7 +88,7 @@ public class h_lesson4 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson4.this)
-                                .setTitle("Wrong answer")
+                                .setTitle(getText(R.string.fal))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -99,6 +99,15 @@ public class h_lesson4 extends AppCompatActivity {
                     }
                 });
 
+            }
+        });
+        ImageView iv17 = findViewById(R.id.imageView17);
+        iv17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(h_lesson4.this,h_lesson5.class);
+                startActivity(intent);
             }
         });
     }

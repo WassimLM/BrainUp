@@ -34,13 +34,20 @@ public class h_lesson5 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson5.this)
-                                .setTitle("Correct")
+                                .setTitle(getText(R.string.corr))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
-                                        Intent intent = new Intent(h_lesson5.this,chapters.class);
-                                        startActivity(intent);
-
+                                        new AlertDialog.Builder(h_lesson5.this)
+                                                .setTitle(getText(R.string.congratulation))
+                                                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                                        Intent intent = new Intent(h_lesson5.this,chapters.class);
+                                                        startActivity(intent);
+                                                    }
+                                                })
+                                                .show();
                                     }
                                 })
 
@@ -53,7 +60,7 @@ public class h_lesson5 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson5.this)
-                                .setTitle("Wrong answer")
+                                .setTitle(getText(R.string.fal))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -71,7 +78,7 @@ public class h_lesson5 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson5.this)
-                                .setTitle("Wrong answer")
+                                .setTitle(getText(R.string.fal))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -88,7 +95,7 @@ public class h_lesson5 extends AppCompatActivity {
                     public void onClick(View v) {
 
                         new AlertDialog.Builder(h_lesson5.this)
-                                .setTitle("Wrong answer")
+                                .setTitle(getText(R.string.fal))
                                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
 
