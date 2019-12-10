@@ -68,14 +68,13 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:srcCompat="@drawable/playbtn"
         android:contentDescription="@string/desc1"/>
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="146dp" />
-    
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
